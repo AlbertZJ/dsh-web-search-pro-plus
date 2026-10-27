@@ -1,6 +1,6 @@
 import type { UserConfig } from 'tsdown'
 
-const PLUGIN_ID = 'dsh-web-search-pro'
+const PLUGIN_ID = 'dsh-web-search-pro-plus'
 const CLIENT_EXTERNALS = [
   'react',
   'react/jsx-runtime',

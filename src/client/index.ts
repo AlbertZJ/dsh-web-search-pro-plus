@@ -42,7 +42,7 @@ export function apply(ctx: Context): void {
   ctx.effect(() => ctx.configForms.whileServed(['web-search-pro'], () =>
     ctx.slots.inject('plugins.bundle.config', () => ctx.slots.register({
       name: 'plugins.bundle.config',
-      key: 'dsh-web-search-pro',
+      key: 'dsh-web-search-pro-plus',
       locale: NS,
       inject: () => controller.inject(),
     }, SettingsCard))), 'web-search-pro: bundle configuration')

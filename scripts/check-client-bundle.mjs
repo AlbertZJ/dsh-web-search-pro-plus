@@ -13,7 +13,10 @@ const forbidden = [...new Set(imports.filter(id => !allowed.has(id)))].sort()
 assert.deepEqual(forbidden, [], `client bundle contains unavailable imports: ${forbidden.join(', ')}`)
 assert.match(source, /plugins\.bundle\.config/)
 assert.match(source, /web-search-pro/)
-assert.match(source, /key:\s*["']dsh-web-search-pro["']/)
+// The client module registers under its package name; the loader looks the
+// bundle up by that name and reports "did not activate" on a mismatch.
+assert.match(source, /id:\s*["']dsh-web-search-pro-plus["']/)
+assert.match(source, /key:\s*["']dsh-web-search-pro-plus["']/)
 assert.match(source, /Web Search Pro/)
 assert.equal('sourcesContent' in sourceMap, false, 'client source map must exclude platform-dependent source contents')
 console.log(`client bundle check passed (${[...new Set(imports)].length} module-table imports)`)
