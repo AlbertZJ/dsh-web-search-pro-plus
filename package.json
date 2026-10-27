@@ -40,7 +40,6 @@
     "test:client-bundle": "node scripts/check-client-bundle.mjs",
     "verify": "pnpm run typecheck && pnpm run test:peers && pnpm run build && pnpm test && pnpm run test:client-bundle",
     "prepublishOnly": "pnpm run verify",
-    "prepare": "pnpm run build",
     "test:peers": "node test/compat/check-peer-ranges.js",
     "bench:typecheck": "tsc -p bench/tsconfig.json",
     "bench:test": "node --test --experimental-transform-types bench/test/*.test.ts",
