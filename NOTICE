@@ -1,0 +1,19 @@
+dsh-web-search-pro-plus
+Copyright (c) 2026 dsh-web-search-pro-plus contributors
+
+This project is a derivative of dsh-web-search-pro:
+
+  dsh-web-search-pro
+  https://github.com/anweat/dsh-web-search-pro
+  Copyright (c) 2026 dsh-web-search-pro contributors
+  Licensed under the MIT License.
+
+The search core, action set, pipeline, provider adapters, tests, and documentation
+are derived from that upstream project. This fork changes the supported DSH
+baseline to 0.2.1-rc.2 and adds Windows test portability fixes. See CHANGELOG.md
+for the full list of changes.
+
+The original MIT license text is reproduced in LICENSE.
+
+Third-party components and references retain their own licenses; see the
+"外部依赖" and source-reference notes in README.md and the source files.

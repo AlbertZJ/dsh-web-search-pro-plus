@@ -1,0 +1,8 @@
+# dsh-web-search-pro-plus bundle patch.
+#
+# 只装本 bundle 即可（浏览器插件 @anweat/dsh-browser 与 DSH 0.2.1-rc.2 不兼容，
+# 本派生版本不驱动它；read.snapshot / playwright / 浏览器平台会返回
+# CAPABILITY_UNAVAILABLE）。
+- insert:
+    - id: web-search-pro
+      name: dsh-web-search-pro-plus

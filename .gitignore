@@ -1,0 +1,9 @@
+node_modules/
+*.tsbuildinfo
+*.log
+.DS_Store
+.codegraph/
+*.tgz
+
+# bench: local candidate snapshots and labels (see bench/README.md)
+bench/data/
